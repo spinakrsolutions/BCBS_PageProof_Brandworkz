@@ -1,0 +1,21 @@
+# Ignore generated files
+dist/
+node_modules/
+
+# Ignore test files (adjust as needed)
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Ignore temporary files
+.eslintrc.js
+
+# Ignore TypeScript declaration files
+*.d.ts
+
+# Ignore coverage reports
+coverage/
+
+# Specific file or directory patterns to ignore
+# Add more patterns as needed
+!src/utils/*.ts  # Example: Ignore all files in src/utils directory

@@ -1,0 +1,28 @@
+{
+  "name": "bcbs_pageproof_brandworkz",
+  "version": "1.0.0",
+  "description": "this is connector for page proof and brandworkz through webhook",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node src/api/app.ts",
+    "dev": "nodemon src/api/app.ts"
+  },
+  "author": "Spinakr",
+  "license": "ISC",
+  "dependencies": {
+    "@pageproof/sdk": "^2.0.0-beta.314",
+    "axios": "^1.6.8",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "inversify": "^6.0.2",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.5",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.4"
+  }
+}
