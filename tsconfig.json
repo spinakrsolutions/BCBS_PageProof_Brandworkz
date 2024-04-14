@@ -19,6 +19,6 @@
       ]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "src/api/app.ts"],
   "exclude": ["node_modules"]
 }
