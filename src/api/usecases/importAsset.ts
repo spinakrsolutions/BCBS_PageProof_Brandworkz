@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from 'axios';
 import { ImportAssetRequestBody } from '../interfaces/ImportAssetRequestBody';
 import { importAssertApiResponse } from '../interfaces/importAssertApiResponse';
 
-export async function importAsset(url: string, token: string,requestBody:ImportAssetRequestBody): Promise<importAssertApiResponse> {
+export async function importAsset(url: string, token: string, requestBody: ImportAssetRequestBody): Promise<importAssertApiResponse> {
     const requestConfig: AxiosRequestConfig = {
         method: 'POST',
         url: `${url}/importAsset`,

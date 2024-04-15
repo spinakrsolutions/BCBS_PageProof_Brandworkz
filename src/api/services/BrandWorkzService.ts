@@ -25,7 +25,7 @@ export class BrandWorkzService {
         }
     }
 
-    async uploadFile(filename: string, blob: Buffer,size:number): Promise<boolean> {
+    async uploadFile(filename: string, blob: Buffer, size: number): Promise<boolean> {
         var token = await getToken(this.api_url, this.client_id);
         var url = `${this.api_url}/v${this.version}/${this.client_id}`;
         var uploadResponse = await createUploadPathSingle(url, token, filename, size);
@@ -39,8 +39,8 @@ export class BrandWorkzService {
                 fileSize: size,
                 originalFilename: filename
             };
-            var response = await importAsset(url,token,requestBody);
-            return response.result.httpStatus==200;
+            var response = await importAsset(url, token, requestBody);
+            return response.result.httpStatus == 200;
         }
         return false;
     }

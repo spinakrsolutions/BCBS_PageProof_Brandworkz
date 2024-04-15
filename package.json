@@ -2,10 +2,10 @@
   "name": "bcbs_pageproof_brandworkz",
   "version": "1.0.0",
   "description": "this is connector for page proof and brandworkz through webhook",
-  "main": "app.ts",
+  "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "node src/api/app.ts",
+    "serve": "tsc & node dist/app.js",
     "dev": "nodemon src/api/app.ts"
   },
   "author": "Spinakr",
