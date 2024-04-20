@@ -5,7 +5,6 @@ import { errorMiddleware } from './middlewares/errorMiddleware';
 
 const app = express();
 app.use(express.json());
-
 app.use('/', router);
 
 app.use(errorMiddleware);
@@ -15,4 +14,4 @@ const port = process.env.PORT || 3000;
 const server = createServer(app);
 server.listen(port,():void=>{
     console.log(`Server running at http://${hostname}:${port}/`)
-})
+});
