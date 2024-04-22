@@ -4,7 +4,7 @@ dotenv.config();
 
 export class AppInsigtsLoggingService {
   constructor() {
-    appInsights.setup(process.env.APPLICATIONINSIGHTS_CONNECTION_STRING).start();
+    appInsights.setup(process.env.APPLICATIONINSIGHTS_CONNECTION_STRING).setAutoCollectRequests(false).start();
   }
 
   trackEvent(eventName: string, properties: any) {
@@ -19,7 +19,7 @@ export class AppInsigtsLoggingService {
     appInsights.defaultClient.trackNodeHttpRequest({ request: req, response: res });
   }
 
-  trackTrace(msg: Error) {
+  trackTrace(msg: any) {
     appInsights.defaultClient.trackTrace({ message: msg });
   }
 }
